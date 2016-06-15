@@ -20,14 +20,14 @@ func main() {
 		}
 
 		const (
-            enS1 = "mean"
-		    enS2 = "my"
-        )
+			enS1 = "mean"
+			enS2 = "my"
+		)
 
-        const (
-            jaS1 = "平均"
-            jaS2 = "私"
-        )
+		const (
+			jaS1 = "平均"
+			jaS2 = "私"
+		)
 
 		switch x {
 		case enS1:
