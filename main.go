@@ -14,7 +14,7 @@ func main() {
 
 		q := "q"
 		Q := "Q"
-		if q == x || Q == x {
+		if q == enWord || Q == enWord {
 			fmt.Println("end")
 			break
 		}
@@ -29,7 +29,7 @@ func main() {
 			jaS2 = "私"
 		)
 
-		switch x {
+		switch enWord {
 		case enS1:
 			fmt.Println(jaS1)
 		case enS2:
