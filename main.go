@@ -6,6 +6,7 @@ import (
 
 func main() {
 	fmt.Println("enja")
+	fmt.Println("英単語の簡素な意味を調べることができます。英単語を小文字で入力してください。終了するには、q、またはQキーを入力してください")
 
 	for {
 		fmt.Printf(">>> ")
@@ -19,24 +20,6 @@ func main() {
 			break
 		}
 
-		const (
-			enS1 = "mean"
-			enS2 = "my"
-		)
-
-		const (
-			jaS1 = "平均"
-			jaS2 = "私"
-		)
-
-		switch enWord {
-		case enS1:
-			fmt.Println(jaS1)
-		case enS2:
-			fmt.Println(jaS2)
-		default:
-			fmt.Println("not found")
-		}
-
+		SwitchEnWord(enWord)
 	}
 }
