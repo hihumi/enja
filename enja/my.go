@@ -28,7 +28,7 @@ func MyPrintJa() {
 	var My MyStruct
 	My.my = MyJaString()
 
-	fmt.Printf("[代名詞]: \n[主な意味]: %v \n(また、[間投詞]としても用いられる)\n", My.my)
+	fmt.Printf("[代名詞]: [主な意味]: %v \n(また、[間投詞]としても用いられる)\n", My.my)
 
 	return
 }

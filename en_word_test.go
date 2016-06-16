@@ -7,10 +7,19 @@ import (
 
 func TestSwitchEnWord(t *testing.T) {
 	// enja.MyEnstring() (my.go: MyEnString())
-	MyEnExcept := "my"
-	MyEnActual := enja.MyEnString()
+	myEnExpect := "my"
+	myEnActual := enja.MyEnString()
 
-	if MyEnExcept != MyEnActual {
-		t.Errorf("%v != %v\n", MyEnExcept, MyEnActual)
+	if myEnExpect != myEnActual {
+		t.Errorf("%v != %v\n", myEnExpect, myEnActual)
 	}
+
+	// enja.RespectEnString() (respect.go: RespectEnString())
+	respectEnExpect := "respect"
+	respectEnActual := enja.RespectEnString()
+
+	if respectEnExpect != respectEnActual {
+		t.Errorf("%v != %v\n", respectEnExpect, respectEnActual)
+	}
+
 }
