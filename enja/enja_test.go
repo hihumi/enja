@@ -34,8 +34,16 @@ func TestRespectEnString(t *testing.T) {
 func TestRespectJaString(t *testing.T) {
 	expect := `[名]: [C, U]: [主な意味]: 尊重・尊敬
 [動]: [主な意味]: ...を尊重・尊敬する`
-
 	actual := RespectJaString()
+
+	if expect != actual {
+		t.Errorf("%v != %v\n", expect, actual)
+	}
+}
+func TestRespectPrintJa(t *testing.T) {
+	expect := RespectJaString()
+	actual := `[名]: [C, U]: [主な意味]: 尊重・尊敬
+[動]: [主な意味]: ...を尊重・尊敬する`
 
 	if expect != actual {
 		t.Errorf("%v != %v\n", expect, actual)
