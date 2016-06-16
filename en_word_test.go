@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./enja"
+	"github.com/hihumi/enja"
 	"testing"
 )
 
