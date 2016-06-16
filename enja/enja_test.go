@@ -32,7 +32,9 @@ func TestRespectEnString(t *testing.T) {
 	}
 }
 func TestRespectJaString(t *testing.T) {
-	expect := "尊重・尊敬"
+	expect := `[名]: [C, U]: [主な意味]: 尊重・尊敬
+[動]: [主な意味]: ...を尊重・尊敬する`
+
 	actual := RespectJaString()
 
 	if expect != actual {

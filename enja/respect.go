@@ -19,7 +19,8 @@ func RespectEnString() interface{} {
 
 func RespectJaString() interface{} {
 	var RespectJa RespectStruct
-	RespectJa.respectJaString = "尊重・尊敬"
+	RespectJa.respectJaString = `[名]: [C, U]: [主な意味]: 尊重・尊敬
+[動]: [主な意味]: ...を尊重・尊敬する`
 
 	return RespectJa.respectJaString
 
@@ -29,7 +30,7 @@ func RespectPrintJa() {
 	var Respect RespectStruct
 	Respect.respect = RespectJaString()
 
-	fmt.Printf("[名]: [C, U]: [主な意味]: %v\n[動]: [主な意味]: ...を%vする\n", Respect.respect, Respect.respect)
+	fmt.Println(Respect.respect)
 
 	return
 }
