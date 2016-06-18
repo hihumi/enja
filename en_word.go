@@ -9,9 +9,10 @@ import (
 func SwitchEnWord(enWord string) {
 
 	var (
-		my      = enja.MyEnString()
-		respect = enja.RespectEnString()
-		will    = enja.WillEnString()
+		my         = enja.MyEnString()
+		respect    = enja.RespectEnString()
+		will       = enja.WillEnString()
+		individual = enja.IndividualEnString()
 	)
 
 	switch enWord {
@@ -21,6 +22,8 @@ func SwitchEnWord(enWord string) {
 		enja.RespectPrintJa()
 	case will:
 		enja.WillPrintJa()
+	case individual:
+		enja.IndividualPrintJa()
 	default:
 		fmt.Println("not found")
 	}

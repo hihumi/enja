@@ -62,7 +62,6 @@ func TestWillEnString(t *testing.T) {
 func TestWillJaString(t *testing.T) {
 	expect := `[名]: [C, U]: [主な意味]: 意志
 また、[C]: 遺書`
-
 	actual := WillJaString()
 
 	if expect != actual {
@@ -73,6 +72,34 @@ func TestWillPrintJa(t *testing.T) {
 	expect := WillJaString()
 	actual := `[名]: [C, U]: [主な意味]: 意志
 また、[C]: 遺書`
+
+	if expect != actual {
+		t.Errorf("%v != %v\n", expect, actual)
+	}
+}
+
+// individual.go
+func TestIndividualEnString(t *testing.T) {
+	expect := "individual"
+	actual := IndividualEnString()
+
+	if expect != actual {
+		t.Errorf("%v != %v\n", expect, actual)
+	}
+}
+func TestIndividualJaString(t *testing.T) {
+	expect := `[名]: [C]: [主な意味]: 個人
+[形]: [主な意味]: 1.個人の... 2.個々の... 3.個性的な...`
+	actual := IndividualJaString()
+
+	if expect != actual {
+		t.Errorf("%v != %v\n", expect, actual)
+	}
+}
+func TestIndividualPrintJa(t *testing.T) {
+	expect := IndividualJaString()
+	actual := `[名]: [C]: [主な意味]: 個人
+[形]: [主な意味]: 1.個人の... 2.個々の... 3.個性的な...`
 
 	if expect != actual {
 		t.Errorf("%v != %v\n", expect, actual)

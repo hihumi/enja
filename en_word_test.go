@@ -30,4 +30,13 @@ func TestSwitchEnWord(t *testing.T) {
 	if willEnExpect != willEnActual {
 		t.Errorf("%v != %v\n", willEnExpect, willEnActual)
 	}
+
+	// enja.IndividualEnString() (individual.go: IndividualEnString())
+	individualEnExpect := "individual"
+	individualEnActual := enja.IndividualEnString()
+
+	if individualEnExpect != individualEnActual {
+		t.Errorf("%v != %v\n", individualEnExpect, individualEnActual)
+	}
+
 }
