@@ -49,3 +49,32 @@ func TestRespectPrintJa(t *testing.T) {
 		t.Errorf("%v != %v\n", expect, actual)
 	}
 }
+
+// will.go
+func TestWillEnString(t *testing.T) {
+	expect := "will"
+	actual := WillEnString()
+
+	if expect != actual {
+		t.Errorf("%v != %v\n", expect, actual)
+	}
+}
+func TestWillJaString(t *testing.T) {
+	expect := `[名]: [C, U]: [主な意味]: 意志
+また、[C]: 遺書`
+
+	actual := WillJaString()
+
+	if expect != actual {
+		t.Errorf("%v != %v\n", expect, actual)
+	}
+}
+func TestWillPrintJa(t *testing.T) {
+	expect := WillJaString()
+	actual := `[名]: [C, U]: [主な意味]: 意志
+また、[C]: 遺書`
+
+	if expect != actual {
+		t.Errorf("%v != %v\n", expect, actual)
+	}
+}

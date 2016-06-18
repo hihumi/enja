@@ -23,7 +23,6 @@ func RespectJaString() interface{} {
 [動]: [主な意味]: ...を尊重・尊敬する`
 
 	return RespectJa.respectJaString
-
 }
 
 func RespectPrintJa() {

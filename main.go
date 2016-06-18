@@ -16,7 +16,7 @@ func main() {
 		q := "q"
 		Q := "Q"
 		if q == enWord || Q == enWord {
-			fmt.Println("end")
+			fmt.Println("See you!")
 			break
 		}
 

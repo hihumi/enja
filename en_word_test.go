@@ -1,7 +1,8 @@
 package main
 
 import (
-	"github.com/hihumi/enja/enja"
+	"./enja"
+	_ "github.com/hihumi/enja/enja"
 	"testing"
 )
 
@@ -22,4 +23,11 @@ func TestSwitchEnWord(t *testing.T) {
 		t.Errorf("%v != %v\n", respectEnExpect, respectEnActual)
 	}
 
+	// enja.WillEnString() (will.go: WillEnString())
+	willEnExpect := "will"
+	willEnActual := enja.WillEnString()
+
+	if willEnExpect != willEnActual {
+		t.Errorf("%v != %v\n", willEnExpect, willEnActual)
+	}
 }
