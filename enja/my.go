@@ -5,19 +5,17 @@ import (
 )
 
 type MyStruct struct {
-	myEnString interface{}
-	myJaString interface{}
-	my         interface{}
+	myEnString, myJaString, my string
 }
 
-func MyEnString() interface{} {
+func MyEnString() string {
 	var MyEn MyStruct
 	MyEn.myEnString = "my"
 
 	return MyEn.myEnString
 }
 
-func MyJaString() interface{} {
+func MyJaString() string {
 	var MyJa MyStruct
 	MyJa.myJaString = "私の"
 

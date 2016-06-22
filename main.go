@@ -5,8 +5,8 @@ import (
 )
 
 func main() {
-	fmt.Println("enja")
-	fmt.Println("英単語の簡素な意味を調べることができます。英単語を小文字で入力してください。終了するには、q、またはQキーを入力してください。")
+	fmt.Printf("--- Welcome! --- \n\n")
+	fmt.Printf("英単語の簡素な意味を調べることができます。英単語を小文字で入力してください。終了するには、q、またはQキーを入力してください。\n")
 
 	for {
 		fmt.Printf(">>> ")
@@ -16,7 +16,7 @@ func main() {
 		q := "q"
 		Q := "Q"
 		if q == enWord || Q == enWord {
-			fmt.Println("See you!")
+			fmt.Printf("\n--- See you! --- \n")
 			break
 		}
 

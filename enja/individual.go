@@ -5,20 +5,21 @@ import (
 )
 
 type IndividualStruct struct {
-	individualEnString, individualJaString, individual interface{}
+	individualEnString, individualJaString, individual string
 }
 
-func IndividualEnString() interface{} {
+func IndividualEnString() string {
 	var IndividualEn IndividualStruct
 	IndividualEn.individualEnString = "individual"
 
 	return IndividualEn.individualEnString
 }
 
-func IndividualJaString() interface{} {
+func IndividualJaString() string {
 	var IndividualJa IndividualStruct
 	IndividualJa.individualJaString = `[名]: [C]: [主な意味]: 個人
 [形]: [主な意味]: 1.個人の... 2.個々の... 3.個性的な...`
+
 	return IndividualJa.individualJaString
 }
 
