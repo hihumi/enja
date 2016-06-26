@@ -189,3 +189,29 @@ func TestNegativePrintJa(t *testing.T) {
 		t.Errorf("%s != %s\n", expect, actual)
 	}
 }
+
+// outlook.go
+func TestOutlookEnString(t *testing.T) {
+	expect := "outlook"
+	actual := OutlookEnString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestOutlookJaString(t *testing.T) {
+	expect := `[名]: [C]: [主な意味]: 1. 見通し 2. 視野 3. 展望`
+	actual := OutlookJaString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestOutlookPrintJa(t *testing.T) {
+	expect := OutlookJaString()
+	actual := `[名]: [C]: [主な意味]: 1. 見通し 2. 視野 3. 展望`
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}

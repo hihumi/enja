@@ -1,8 +1,9 @@
 package main
 
 import (
+    "fmt"
+
 	"./enja"
-	"fmt"
 	_ "github.com/hihumi/enja/enja"
 )
 
@@ -15,6 +16,7 @@ func SwitchEnWord(enWord string) {
 		individual = enja.IndividualEnString()
 		positive   = enja.PositiveEnString()
 		negative   = enja.NegativeEnString()
+        outlook = enja.OutlookEnString()
 	)
 
 	switch enWord {
@@ -30,6 +32,8 @@ func SwitchEnWord(enWord string) {
 		enja.PositivePrintJa()
 	case negative:
 		enja.NegativePrintJa()
+    case outlook:
+        enja.OutlookPrintJa()
 	default:
 		fmt.Println("not found")
 	}

@@ -65,4 +65,12 @@ func TestSwitchEnWord(t *testing.T) {
 	if negativeEnExpect != negativeEnActual {
 		t.Errorf("%v != %v\n", negativeEnExpect, negativeEnActual)
 	}
+
+    // enja.OutlookEnstring() (outlook.go: OutlookEnString())
+	outlookEnExpect := "outlook"
+	outlookEnActual := enja.OutlookEnString()
+
+	if outlookEnExpect != outlookEnActual {
+		t.Errorf("%v != %v\n", outlookEnExpect, outlookEnActual)
+	}
 }
