@@ -39,4 +39,12 @@ func TestSwitchEnWord(t *testing.T) {
 		t.Errorf("%v != %v\n", individualEnExpect, individualEnActual)
 	}
 
+	// enja.PositiveEnString() (positive.go: PositiveEnString())
+	positiveEnExpect := "positive"
+	positiveEnActual := enja.PositiveEnString()
+
+	if positiveEnExpect != positiveEnActual {
+		t.Errorf("%v != %v\n", positiveEnExpect, positiveEnActual)
+	}
+
 }

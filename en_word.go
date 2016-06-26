@@ -13,6 +13,7 @@ func SwitchEnWord(enWord string) {
 		respect    = enja.RespectEnString()
 		will       = enja.WillEnString()
 		individual = enja.IndividualEnString()
+		positive   = enja.PositiveEnString()
 	)
 
 	switch enWord {
@@ -24,6 +25,8 @@ func SwitchEnWord(enWord string) {
 		enja.WillPrintJa()
 	case individual:
 		enja.IndividualPrintJa()
+	case positive:
+		enja.PositivePrintJa()
 	default:
 		fmt.Println("not found")
 	}

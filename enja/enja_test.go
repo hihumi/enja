@@ -4,13 +4,42 @@ import (
 	"testing"
 )
 
+// template
+// foo.go
+/*
+func TestEnwordEnString(t *testing.T) {
+	expect := "en_word"
+	actual := EnwordEnString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestEnwordJaString(t *testing.T) {
+	expect := `日本語解説`
+	actual := EnwordJaString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestEnWordPrintJa(t *testing.T) {
+	expect := EnwordJaString()
+	actual := `日本語解説`
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+*/
+
 // my.go
 func TestMyEnString(t *testing.T) {
 	expect := "my"
 	actual := MyEnString()
 
 	if expect != actual {
-		t.Errorf("%v != %v\n", expect, actual)
+		t.Errorf("%s != %s\n", expect, actual)
 	}
 }
 func TestMyJaString(t *testing.T) {
@@ -18,7 +47,7 @@ func TestMyJaString(t *testing.T) {
 	actual := MyJaString()
 
 	if expect != actual {
-		t.Errorf("%v != %v\n", expect, actual)
+		t.Errorf("%s != %s\n", expect, actual)
 	}
 }
 
@@ -28,7 +57,7 @@ func TestRespectEnString(t *testing.T) {
 	actual := RespectEnString()
 
 	if expect != actual {
-		t.Errorf("%v != %v\n", expect, actual)
+		t.Errorf("%s != %s\n", expect, actual)
 	}
 }
 func TestRespectJaString(t *testing.T) {
@@ -37,7 +66,7 @@ func TestRespectJaString(t *testing.T) {
 	actual := RespectJaString()
 
 	if expect != actual {
-		t.Errorf("%v != %v\n", expect, actual)
+		t.Errorf("%s != %s\n", expect, actual)
 	}
 }
 func TestRespectPrintJa(t *testing.T) {
@@ -46,7 +75,7 @@ func TestRespectPrintJa(t *testing.T) {
 [動]: [主な意味]: ...を尊重・尊敬する`
 
 	if expect != actual {
-		t.Errorf("%v != %v\n", expect, actual)
+		t.Errorf("%s != %s\n", expect, actual)
 	}
 }
 
@@ -56,7 +85,7 @@ func TestWillEnString(t *testing.T) {
 	actual := WillEnString()
 
 	if expect != actual {
-		t.Errorf("%v != %v\n", expect, actual)
+		t.Errorf("%s != %s\n", expect, actual)
 	}
 }
 func TestWillJaString(t *testing.T) {
@@ -65,7 +94,7 @@ func TestWillJaString(t *testing.T) {
 	actual := WillJaString()
 
 	if expect != actual {
-		t.Errorf("%v != %v\n", expect, actual)
+		t.Errorf("%s != %s\n", expect, actual)
 	}
 }
 func TestWillPrintJa(t *testing.T) {
@@ -74,7 +103,7 @@ func TestWillPrintJa(t *testing.T) {
 また、[C]: 遺書`
 
 	if expect != actual {
-		t.Errorf("%v != %v\n", expect, actual)
+		t.Errorf("%s != %s\n", expect, actual)
 	}
 }
 
@@ -84,7 +113,7 @@ func TestIndividualEnString(t *testing.T) {
 	actual := IndividualEnString()
 
 	if expect != actual {
-		t.Errorf("%v != %v\n", expect, actual)
+		t.Errorf("%s != %s\n", expect, actual)
 	}
 }
 func TestIndividualJaString(t *testing.T) {
@@ -93,7 +122,7 @@ func TestIndividualJaString(t *testing.T) {
 	actual := IndividualJaString()
 
 	if expect != actual {
-		t.Errorf("%v != %v\n", expect, actual)
+		t.Errorf("%s != %s\n", expect, actual)
 	}
 }
 func TestIndividualPrintJa(t *testing.T) {
@@ -102,6 +131,32 @@ func TestIndividualPrintJa(t *testing.T) {
 [形]: [主な意味]: 1.個人の... 2.個々の... 3.個性的な...`
 
 	if expect != actual {
-		t.Errorf("%v != %v\n", expect, actual)
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+
+// positive.go
+func TestPositiveEnString(t *testing.T) {
+	expect := "positive"
+	actual := PositiveEnString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestPositiveJaString(t *testing.T) {
+	expect := `[形]: [主な意味]: 1. 積極的な、前向きな(の) 2. 確信のある、自信のある 3. 明確な、はっきりした 4. 正(プラス)の性質`
+	actual := PositiveJaString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestPositivePrintJa(t *testing.T) {
+	expect := PositiveJaString()
+	actual := `[形]: [主な意味]: 1. 積極的な、前向きな(の) 2. 確信のある、自信のある 3. 明確な、はっきりした 4. 正(プラス)の性質`
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
 	}
 }
