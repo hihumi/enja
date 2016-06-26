@@ -6,6 +6,17 @@ import (
 	"testing"
 )
 
+// template
+// enja.FooEnstring() (foo.go: FooEnString())
+/*
+	myEnExpect := "en_word"
+	myEnActual := enja.FooEnString()
+
+	if fooEnExpect != fooEnActual {
+		t.Errorf("%v != %v\n", fooEnExpect, fooEnActual)
+	}
+*/
+
 func TestSwitchEnWord(t *testing.T) {
 	// enja.MyEnstring() (my.go: MyEnString())
 	myEnExpect := "my"
@@ -47,4 +58,11 @@ func TestSwitchEnWord(t *testing.T) {
 		t.Errorf("%v != %v\n", positiveEnExpect, positiveEnActual)
 	}
 
+	// enja.NegativeEnstring() (negative.go: NegativeEnString())
+	negativeEnExpect := "negative"
+	negativeEnActual := enja.NegativeEnString()
+
+	if negativeEnExpect != negativeEnActual {
+		t.Errorf("%v != %v\n", negativeEnExpect, negativeEnActual)
+	}
 }

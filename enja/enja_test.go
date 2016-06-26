@@ -160,3 +160,32 @@ func TestPositivePrintJa(t *testing.T) {
 		t.Errorf("%s != %s\n", expect, actual)
 	}
 }
+
+// negative.go
+func TestNegativeEnString(t *testing.T) {
+	expect := "negative"
+	actual := NegativeEnString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestNegativeJaString(t *testing.T) {
+	expect := `[形]: [主な意味]: 1. 悲観的な、消極的な 2. 否定の 3. 負(マイナス)の性質
+(また、写真の「ネガ」: a negative film)`
+
+	actual := NegativeJaString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestNegativePrintJa(t *testing.T) {
+	expect := NegativeJaString()
+	actual := `[形]: [主な意味]: 1. 悲観的な、消極的な 2. 否定の 3. 負(マイナス)の性質
+(また、写真の「ネガ」: a negative film)`
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
