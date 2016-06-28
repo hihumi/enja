@@ -10,8 +10,8 @@ import (
 // template
 // enja.FooEnstring() (foo.go: FooEnString())
 /*
-	myEnExpect := "en_word"
-	myEnActual := enja.FooEnString()
+	fooEnExpect := "en_word"
+	ffEnActual := enja.FooEnString()
 
 	if fooEnExpect != fooEnActual {
 		t.Errorf("%v != %v\n", fooEnExpect, fooEnActual)
@@ -81,5 +81,13 @@ func TestSwitchEnWord(t *testing.T) {
 
 	if outlookEnExpect != outlookEnActual {
 		t.Errorf("%v != %v\n", outlookEnExpect, outlookEnActual)
+	}
+
+	// enja.MaintainEnstring() (maintain.go: MaintainEnString())
+	maintainEnExpect := "maintain"
+	maintainEnActual := enja.MaintainEnString()
+
+	if maintainEnExpect != maintainEnActual {
+		t.Errorf("%v != %v\n", maintainEnExpect, maintainEnActual)
 	}
 }

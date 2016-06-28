@@ -357,3 +357,29 @@ func TestOutlookPrintJa(t *testing.T) {
 		t.Errorf("%s != %s\n", expect, actual)
 	}
 }
+
+// maintain.go
+func TestMaintainEnString(t *testing.T) {
+	expect := "maintain"
+	actual := MaintainEnString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestMaintainJaString(t *testing.T) {
+	expect := `[動]: [主な意味]: 1. (状態や関係など)を維持する、保つ 2. (建物や機械など)を手入れする、整備する 3. 主張する`
+	actual := MaintainJaString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestMaintainPrintJa(t *testing.T) {
+	expect := MaintainJaString()
+	actual := `[動]: [主な意味]: 1. (状態や関係など)を維持する、保つ 2. (建物や機械など)を手入れする、整備する 3. 主張する`
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
