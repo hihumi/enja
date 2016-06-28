@@ -45,6 +45,7 @@ func TestWordListsEnString(t *testing.T) {
 func TestWordListsJaString(t *testing.T) {
 	expect := `word lists:
 [a]:
+  attitude,
 
 [b]:
 
@@ -113,6 +114,7 @@ func TestWordListsPrintJa(t *testing.T) {
 	expect := WordListsJaString()
 	actual := `word lists:
 [a]:
+  attitude,
 
 [b]:
 
@@ -380,6 +382,32 @@ func TestMaintainJaString(t *testing.T) {
 func TestMaintainPrintJa(t *testing.T) {
 	expect := MaintainJaString()
 	actual := `[動]: [主な意味]: 1. (状態や関係など)を維持する、保つ 2. (建物や機械など)を手入れする、整備する 3. 主張する`
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+
+// attitude.go
+func TestAttitudeEnString(t *testing.T) {
+	expect := "attitude"
+	actual := AttitudeEnString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestAttitudeJaString(t *testing.T) {
+	expect := `[名]: [C, U]: [主な意味]: 態度、姿勢、考え方`
+	actual := AttitudeJaString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestAttitudePrintJa(t *testing.T) {
+	expect := AttitudeJaString()
+	actual := `[名]: [C, U]: [主な意味]: 態度、姿勢、考え方`
 
 	if expect != actual {
 		t.Errorf("%s != %s\n", expect, actual)

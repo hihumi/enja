@@ -11,7 +11,7 @@ import (
 // enja.FooEnstring() (foo.go: FooEnString())
 /*
 	fooEnExpect := "en_word"
-	ffEnActual := enja.FooEnString()
+	fooEnActual := enja.FooEnString()
 
 	if fooEnExpect != fooEnActual {
 		t.Errorf("%v != %v\n", fooEnExpect, fooEnActual)
@@ -89,5 +89,13 @@ func TestSwitchEnWord(t *testing.T) {
 
 	if maintainEnExpect != maintainEnActual {
 		t.Errorf("%v != %v\n", maintainEnExpect, maintainEnActual)
+	}
+
+    // enja.AttitudeEnstring() (attitude.go: AttitudeEnString())
+	attitudeEnExpect := "attitude"
+	attitudeEnActual := enja.AttitudeEnString()
+
+	if attitudeEnExpect != attitudeEnActual {
+		t.Errorf("%v != %v\n", attitudeEnExpect, attitudeEnActual)
 	}
 }

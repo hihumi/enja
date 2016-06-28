@@ -19,6 +19,7 @@ func WordListsJaString() string {
 	var WordListsJa WordListsStruct
 	WordListsJa.wordListsJaString = `word lists:
 [a]:
+  attitude,
 
 [b]:
 
