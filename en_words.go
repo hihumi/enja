@@ -21,6 +21,7 @@ func SwitchEnWord(enWord string) {
 		outlook    = enja.OutlookEnString()
 		maintain   = enja.MaintainEnString()
 		attitude   = enja.AttitudeEnString()
+		fair       = enja.FairEnString()
 	)
 
 	switch enWord {
@@ -44,6 +45,8 @@ func SwitchEnWord(enWord string) {
 		enja.MaintainPrintJa()
 	case attitude:
 		enja.AttitudePrintJa()
+	case fair:
+		enja.FairPrintJa()
 	default:
 		fmt.Println("not found")
 	}

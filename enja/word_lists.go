@@ -30,6 +30,7 @@ func WordListsJaString() string {
 [e]:
 
 [f]:
+  fair,
 
 [g]:
 

@@ -56,6 +56,7 @@ func TestWordListsJaString(t *testing.T) {
 [e]:
 
 [f]:
+  fair,
 
 [g]:
 
@@ -125,6 +126,7 @@ func TestWordListsPrintJa(t *testing.T) {
 [e]:
 
 [f]:
+  fair,
 
 [g]:
 
@@ -408,6 +410,34 @@ func TestAttitudeJaString(t *testing.T) {
 func TestAttitudePrintJa(t *testing.T) {
 	expect := AttitudeJaString()
 	actual := `[名]: [C, U]: [主な意味]: 態度、姿勢、考え方`
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+
+// fair.go
+func TestFairEnString(t *testing.T) {
+	expect := "fair"
+	actual := FairEnString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestFairJaString(t *testing.T) {
+	expect := `[形]: [主な意味]: 1. 公平な、公正な 2. かなりの 3. まずまずの 4. (天候)晴れた、好天の
+(また、[名]: [C]: [主な意味]: 博覧会、見本市、遊園地、説明会、慈善市など)`
+	actual := FairJaString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestFairPrintJa(t *testing.T) {
+	expect := FairJaString()
+	actual := `[形]: [主な意味]: 1. 公平な、公正な 2. かなりの 3. まずまずの 4. (天候)晴れた、好天の
+(また、[名]: [C]: [主な意味]: 博覧会、見本市、遊園地、説明会、慈善市など)`
 
 	if expect != actual {
 		t.Errorf("%s != %s\n", expect, actual)

@@ -91,11 +91,20 @@ func TestSwitchEnWord(t *testing.T) {
 		t.Errorf("%v != %v\n", maintainEnExpect, maintainEnActual)
 	}
 
-    // enja.AttitudeEnstring() (attitude.go: AttitudeEnString())
+	// enja.AttitudeEnstring() (attitude.go: AttitudeEnString())
 	attitudeEnExpect := "attitude"
 	attitudeEnActual := enja.AttitudeEnString()
 
 	if attitudeEnExpect != attitudeEnActual {
 		t.Errorf("%v != %v\n", attitudeEnExpect, attitudeEnActual)
 	}
+
+	// enja.FairEnstring() (fair.go: FairEnString())
+	fairEnExpect := "fair"
+	fairEnActual := enja.FairEnString()
+
+	if fairEnExpect != fairEnActual {
+		t.Errorf("%v != %v\n", fairEnExpect, fairEnActual)
+	}
+
 }
