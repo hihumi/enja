@@ -71,6 +71,7 @@ func TestWordListsJaString(t *testing.T) {
 
 [m]:
   my,
+  maintain,
 
 [n]:
   negative,
@@ -138,6 +139,7 @@ func TestWordListsPrintJa(t *testing.T) {
 
 [m]:
   my,
+  maintain,
 
 [n]:
   negative,

@@ -45,6 +45,7 @@ func WordListsJaString() string {
 
 [m]:
   my,
+  maintain,
 
 [n]:
   negative,
