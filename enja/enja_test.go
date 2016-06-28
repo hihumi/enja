@@ -33,6 +33,148 @@ func TestEnWordPrintJa(t *testing.T) {
 }
 */
 
+// word_lists.go
+func TestWordListsEnString(t *testing.T) {
+	expect := "word-lists"
+	actual := WordListsEnString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestWordListsJaString(t *testing.T) {
+	expect := `word lists:
+[a]:
+
+[b]:
+
+[c]:
+
+[d]:
+
+[e]:
+
+[f]:
+
+[g]:
+
+[h]:
+
+[i]:
+  individual,
+
+[j]:
+
+[k]:
+
+[l]:
+
+[m]:
+  my,
+
+[n]:
+  negative,
+
+[o]:
+  outlook,
+
+[p]:
+  positive,
+
+[q]:
+
+[r]:
+  respect,
+
+[s]:
+
+[t]:
+
+[u]:
+
+[v]:
+
+[w]:
+  will,
+
+[x]:
+
+[y]:
+
+[z]:`
+	actual := WordListsJaString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestWordListsPrintJa(t *testing.T) {
+	expect := WordListsJaString()
+	actual := `word lists:
+[a]:
+
+[b]:
+
+[c]:
+
+[d]:
+
+[e]:
+
+[f]:
+
+[g]:
+
+[h]:
+
+[i]:
+  individual,
+
+[j]:
+
+[k]:
+
+[l]:
+
+[m]:
+  my,
+
+[n]:
+  negative,
+
+[o]:
+  outlook,
+
+[p]:
+  positive,
+
+[q]:
+
+[r]:
+  respect,
+
+[s]:
+
+[t]:
+
+[u]:
+
+[v]:
+
+[w]:
+  will,
+
+[x]:
+
+[y]:
+
+[z]:`
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+
 // my.go
 func TestMyEnString(t *testing.T) {
 	expect := "my"

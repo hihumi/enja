@@ -1,9 +1,10 @@
 package main
 
 import (
+	"testing"
+
 	"./enja"
 	_ "github.com/hihumi/enja/enja"
-	"testing"
 )
 
 // template
@@ -18,6 +19,14 @@ import (
 */
 
 func TestSwitchEnWord(t *testing.T) {
+	// enja.WordListsEnstring() (word_lists.go: WordListsEnString())
+	wordListsEnExpect := "word-lists"
+	wordListsEnActual := enja.WordListsEnString()
+
+	if wordListsEnExpect != wordListsEnActual {
+		t.Errorf("%v != %v\n", wordListsEnExpect, wordListsEnActual)
+	}
+
 	// enja.MyEnstring() (my.go: MyEnString())
 	myEnExpect := "my"
 	myEnActual := enja.MyEnString()
@@ -66,7 +75,7 @@ func TestSwitchEnWord(t *testing.T) {
 		t.Errorf("%v != %v\n", negativeEnExpect, negativeEnActual)
 	}
 
-    // enja.OutlookEnstring() (outlook.go: OutlookEnString())
+	// enja.OutlookEnstring() (outlook.go: OutlookEnString())
 	outlookEnExpect := "outlook"
 	outlookEnActual := enja.OutlookEnString()
 
