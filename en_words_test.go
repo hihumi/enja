@@ -115,4 +115,11 @@ func TestSwitchEnWord(t *testing.T) {
 		t.Errorf("%v != %v\n", nationalEnExpect, nationalEnActual)
 	}
 
+	// enja.OriginEnstring() (origin.go: OriginEnString())
+	originEnExpect := "origin"
+	originEnActual := enja.OriginEnString()
+
+	if originEnExpect != originEnActual {
+		t.Errorf("%v != %v\n", originEnExpect, originEnActual)
+	}
 }
