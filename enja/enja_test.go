@@ -7,24 +7,24 @@ import (
 // template
 // foo.go
 /*
-func TestEnwordEnString(t *testing.T) {
-	expect := "en_word"
-	actual := EnwordEnString()
+func TestEnWordEnString(t *testing.T) {
+	expect := "enword"
+	actual := EnWordEnString()
 
 	if expect != actual {
 		t.Errorf("%s != %s\n", expect, actual)
 	}
 }
-func TestEnwordJaString(t *testing.T) {
+func TestEnWordJaString(t *testing.T) {
 	expect := `日本語解説`
-	actual := EnwordJaString()
+	actual := EnWordJaString()
 
 	if expect != actual {
 		t.Errorf("%s != %s\n", expect, actual)
 	}
 }
 func TestEnWordPrintJa(t *testing.T) {
-	expect := EnwordJaString()
+	expect := EnWordJaString()
 	actual := `日本語解説`
 
 	if expect != actual {
@@ -59,6 +59,7 @@ func TestWordsListJaString(t *testing.T) {
   fair,
 
 [g]:
+  gender,
 
 [h]:
 
@@ -131,6 +132,7 @@ func TestWordsListPrintJa(t *testing.T) {
   fair,
 
 [g]:
+  gender,
 
 [h]:
 
@@ -494,6 +496,34 @@ func TestOriginJaString(t *testing.T) {
 func TestOriginPrintJa(t *testing.T) {
 	expect := OriginJaString()
 	actual := `[名]: [C, U]: 起源、発祥、生まれ`
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+
+// foo.go
+func TestGenderEnString(t *testing.T) {
+	expect := "gender"
+	actual := GenderEnString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestGenderJaString(t *testing.T) {
+	expect := `[名]: [C, U]: [主な意味]: (社会的・文化的に形成される)性別
+(なお、sexは、生物的・肉体的な性別)`
+	actual := GenderJaString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestGenderPrintJa(t *testing.T) {
+	expect := GenderJaString()
+	actual := `[名]: [C, U]: [主な意味]: (社会的・文化的に形成される)性別
+(なお、sexは、生物的・肉体的な性別)`
 
 	if expect != actual {
 		t.Errorf("%s != %s\n", expect, actual)

@@ -33,6 +33,7 @@ func WordsListJaString() string {
   fair,
 
 [g]:
+  gender,
 
 [h]:
 
