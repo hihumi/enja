@@ -50,6 +50,7 @@ func WordListsJaString() string {
   maintain,
 
 [n]:
+  national,
   negative,
 
 [o]:

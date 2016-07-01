@@ -76,6 +76,7 @@ func TestWordListsJaString(t *testing.T) {
   maintain,
 
 [n]:
+  national,
   negative,
 
 [o]:
@@ -146,6 +147,7 @@ func TestWordListsPrintJa(t *testing.T) {
   maintain,
 
 [n]:
+  national,
   negative,
 
 [o]:
@@ -438,6 +440,32 @@ func TestFairPrintJa(t *testing.T) {
 	expect := FairJaString()
 	actual := `[形]: [主な意味]: 1. 公平な、公正な 2. かなりの 3. まずまずの 4. (天候)晴れた、好天の
 (また、[名]: [C]: [主な意味]: 博覧会、見本市、遊園地、説明会、慈善市など)`
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+
+// national.go
+func TestNationalEnString(t *testing.T) {
+	expect := "national"
+	actual := NationalEnString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestNationalJaString(t *testing.T) {
+	expect := `[形]: [主な意味]: 1. 国の、 国内の、全国の、国家全体の、中央の、2. 国立の、国有の、国営の`
+	actual := NationalJaString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestNationalPrintJa(t *testing.T) {
+	expect := NationalJaString()
+	actual := `[形]: [主な意味]: 1. 国の、 国内の、全国の、国家全体の、中央の、2. 国立の、国有の、国営の`
 
 	if expect != actual {
 		t.Errorf("%s != %s\n", expect, actual)

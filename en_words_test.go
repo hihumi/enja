@@ -107,4 +107,12 @@ func TestSwitchEnWord(t *testing.T) {
 		t.Errorf("%v != %v\n", fairEnExpect, fairEnActual)
 	}
 
+	// enja.NationalEnstring() (national.go: NationalEnString())
+	nationalEnExpect := "national"
+	nationalEnActual := enja.NationalEnString()
+
+	if nationalEnExpect != nationalEnActual {
+		t.Errorf("%v != %v\n", nationalEnExpect, nationalEnActual)
+	}
+
 }
