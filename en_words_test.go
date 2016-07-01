@@ -20,11 +20,11 @@ import (
 
 func TestSwitchEnWord(t *testing.T) {
 	// enja.WordListsEnstring() (word_lists.go: WordListsEnString())
-	wordListsEnExpect := "word-lists"
-	wordListsEnActual := enja.WordListsEnString()
+	wordsListEnExpect := "words-list"
+	wordsListEnActual := enja.WordsListEnString()
 
-	if wordListsEnExpect != wordListsEnActual {
-		t.Errorf("%v != %v\n", wordListsEnExpect, wordListsEnActual)
+	if wordsListEnExpect != wordsListEnActual {
+		t.Errorf("%v != %v\n", wordsListEnExpect, wordsListEnActual)
 	}
 
 	// enja.MyEnstring() (my.go: MyEnString())

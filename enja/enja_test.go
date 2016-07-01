@@ -35,15 +35,15 @@ func TestEnWordPrintJa(t *testing.T) {
 
 // word_lists.go
 func TestWordListsEnString(t *testing.T) {
-	expect := "word-lists"
-	actual := WordListsEnString()
+	expect := "words-list"
+	actual := WordsListEnString()
 
 	if expect != actual {
 		t.Errorf("%s != %s\n", expect, actual)
 	}
 }
-func TestWordListsJaString(t *testing.T) {
-	expect := `word lists:
+func TestWordsListJaString(t *testing.T) {
+	expect := `words list:
 [a]:
   attitude,
 
@@ -80,6 +80,7 @@ func TestWordListsJaString(t *testing.T) {
   negative,
 
 [o]:
+  origin,
   outlook,
 
 [p]:
@@ -106,15 +107,15 @@ func TestWordListsJaString(t *testing.T) {
 [y]:
 
 [z]:`
-	actual := WordListsJaString()
+	actual := WordsListJaString()
 
 	if expect != actual {
 		t.Errorf("%s != %s\n", expect, actual)
 	}
 }
-func TestWordListsPrintJa(t *testing.T) {
-	expect := WordListsJaString()
-	actual := `word lists:
+func TestWordsListPrintJa(t *testing.T) {
+	expect := WordsListJaString()
+	actual := `words list:
 [a]:
   attitude,
 
@@ -151,6 +152,7 @@ func TestWordListsPrintJa(t *testing.T) {
   negative,
 
 [o]:
+  origin,
   outlook,
 
 [p]:
@@ -466,6 +468,32 @@ func TestNationalJaString(t *testing.T) {
 func TestNationalPrintJa(t *testing.T) {
 	expect := NationalJaString()
 	actual := `[形]: [主な意味]: 1. 国の、 国内の、全国の、国家全体の、中央の、2. 国立の、国有の、国営の`
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+
+// origin.go
+func TestOriginEnString(t *testing.T) {
+	expect := "origin"
+	actual := OriginEnString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestOriginJaString(t *testing.T) {
+	expect := `[名]: [C, U]: 起源、発祥、生まれ`
+	actual := OriginJaString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestOriginPrintJa(t *testing.T) {
+	expect := OriginJaString()
+	actual := `[名]: [C, U]: 起源、発祥、生まれ`
 
 	if expect != actual {
 		t.Errorf("%s != %s\n", expect, actual)

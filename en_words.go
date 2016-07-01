@@ -10,8 +10,9 @@ import (
 func SwitchEnWord(enWord string) {
 
 	var (
-		wordLists = enja.WordListsEnString()
+		wordsList = enja.WordsListEnString()
 
+		// a b c d e f g h i j k l m n o p q r s t u v w x y z
 		attitude   = enja.AttitudeEnString()
 		fair       = enja.FairEnString()
 		individual = enja.IndividualEnString()
@@ -19,6 +20,7 @@ func SwitchEnWord(enWord string) {
 		my         = enja.MyEnString()
 		national   = enja.NationalEnString()
 		negative   = enja.NegativeEnString()
+		origin     = enja.OriginEnString()
 		outlook    = enja.OutlookEnString()
 		positive   = enja.PositiveEnString()
 		respect    = enja.RespectEnString()
@@ -26,8 +28,8 @@ func SwitchEnWord(enWord string) {
 	)
 
 	switch enWord {
-	case wordLists:
-		enja.WordListsPrintJa()
+	case wordsList:
+		enja.WordsListPrintJa()
 	case attitude:
 		enja.AttitudePrintJa()
 	case fair:
@@ -42,6 +44,8 @@ func SwitchEnWord(enWord string) {
 		enja.NationalPrintJa()
 	case negative:
 		enja.NegativePrintJa()
+	case origin:
+		enja.OriginPrintJa()
 	case outlook:
 		enja.OutlookPrintJa()
 	case positive:
