@@ -15,6 +15,7 @@ func main() {
 	fmt.Printf(">>> ")
 
 	scanner := bufio.NewScanner(os.Stdin)
+
 	for scanner.Scan() {
 
 		enWord := scanner.Text()
