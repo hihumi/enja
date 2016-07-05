@@ -3,39 +3,39 @@ package main
 import (
 	"fmt"
 
-	"./enja"
-	_ "github.com/hihumi/enja/enja"
+	"./enjas"
+	//_ "github.com/hihumi/enja/enjas"
 )
 
 func SwitchEnWord(enWord string) {
 
 	var (
-		wordsList = enja.WordsListEnString()
+		wordsList = enjas.WordsListEnString()
 
 		// a b c d e f g h i j k l m n o p q r s t u v w x y z
 		// a
-		attitude = enja.AttitudeEnString()
+		attitude = enjas.AttitudeEnString()
 
 		// b
 
 		// c
-		creed = enja.CreedEnString()
+		creed = enjas.CreedEnString()
 
 		// d
 
 		// e
-		equality = enja.EqualityEnString()
+		equality = enjas.EqualityEnString()
 
 		// f
-		fair = enja.FairEnString()
+		fair = enjas.FairEnString()
 
 		// g
-		gender = enja.GenderEnString()
+		gender = enjas.GenderEnString()
 
 		// h
 
 		// i
-		individual = enja.IndividualEnString()
+		individual = enjas.IndividualEnString()
 
 		// j
 
@@ -44,24 +44,24 @@ func SwitchEnWord(enWord string) {
 		// l
 
 		// m
-		maintain = enja.MaintainEnString()
-		my       = enja.MyEnString()
+		maintain = enjas.MaintainEnString()
+		my       = enjas.MyEnString()
 
 		// n
-		national = enja.NationalEnString()
-		negative = enja.NegativeEnString()
+		national = enjas.NationalEnString()
+		negative = enjas.NegativeEnString()
 
 		// o
-		origin  = enja.OriginEnString()
-		outlook = enja.OutlookEnString()
+		origin  = enjas.OriginEnString()
+		outlook = enjas.OutlookEnString()
 
 		// p
-		positive = enja.PositiveEnString()
+		positive = enjas.PositiveEnString()
 
 		// q
 
 		// r
-		respect = enja.RespectEnString()
+		respect = enjas.RespectEnString()
 
 		// s
 
@@ -72,7 +72,7 @@ func SwitchEnWord(enWord string) {
 		// v
 
 		// w
-		will = enja.WillEnString()
+		will = enjas.WillEnString()
 
 		// x
 
@@ -83,38 +83,38 @@ func SwitchEnWord(enWord string) {
 
 	switch enWord {
 	case wordsList:
-		enja.WordsListPrintJa()
+		enjas.WordsListPrintJa()
 
 	// a b c d e f g h i j k l m n o p q r s t u v w x y z
 	// a
 	case attitude:
-		enja.AttitudePrintJa()
+		enjas.AttitudePrintJa()
 
 	// b
 
 	// c
 	case creed:
-		enja.CreedPrintJa()
+		enjas.CreedPrintJa()
 
 	// d
 
 	// e
 	case equality:
-		enja.EqualityPrintJa()
+		enjas.EqualityPrintJa()
 
 	// f
 	case fair:
-		enja.FairPrintJa()
+		enjas.FairPrintJa()
 
 	// g
 	case gender:
-		enja.GenderPrintJa()
+		enjas.GenderPrintJa()
 
 	// h
 
 	// i
 	case individual:
-		enja.IndividualPrintJa()
+		enjas.IndividualPrintJa()
 
 	// j
 
@@ -124,31 +124,31 @@ func SwitchEnWord(enWord string) {
 
 	// m
 	case maintain:
-		enja.MaintainPrintJa()
+		enjas.MaintainPrintJa()
 	case my:
-		enja.MyPrintJa()
+		enjas.MyPrintJa()
 
 	// n
 	case national:
-		enja.NationalPrintJa()
+		enjas.NationalPrintJa()
 	case negative:
-		enja.NegativePrintJa()
+		enjas.NegativePrintJa()
 
 	// o
 	case origin:
-		enja.OriginPrintJa()
+		enjas.OriginPrintJa()
 	case outlook:
-		enja.OutlookPrintJa()
+		enjas.OutlookPrintJa()
 
 	// p
 	case positive:
-		enja.PositivePrintJa()
+		enjas.PositivePrintJa()
 
 	// q
 
 	// r
 	case respect:
-		enja.RespectPrintJa()
+		enjas.RespectPrintJa()
 	// s
 
 	// t
@@ -159,7 +159,7 @@ func SwitchEnWord(enWord string) {
 
 	// w
 	case will:
-		enja.WillPrintJa()
+		enjas.WillPrintJa()
 
 	// x
 

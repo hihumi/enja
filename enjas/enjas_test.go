@@ -1,4 +1,4 @@
-package enja
+package enjas
 
 import (
 	"testing"

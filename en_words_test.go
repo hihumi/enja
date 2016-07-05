@@ -3,15 +3,15 @@ package main
 import (
 	"testing"
 
-	"./enja"
-	_ "github.com/hihumi/enja/enja"
+	"./enjas"
+	//_ "github.com/hihumi/enja/enjas"
 )
 
 // template
-// enja.EnWordEnstring() (enWord.go: EnWordEnString())
+// enjas.EnWordEnstring() (enWord.go: EnWordEnString())
 /*
 	enWordEnExpect := "enWord"
-	enWordEnActual := enja.EnWordEnString()
+	enWordEnActual := enjas.EnWordEnString()
 
 	if enWordEnExpect != enWordEnActual {
 		t.Errorf("%v != %v\n", enWordEnExpect, enWordEnActual)
@@ -19,129 +19,129 @@ import (
 */
 
 func TestSwitchEnWord(t *testing.T) {
-	// enja.WordListsEnstring() (word_lists.go: WordListsEnString())
+	// enjas.WordListsEnstring() (word_lists.go: WordListsEnString())
 	wordsListEnExpect := "words-list"
-	wordsListEnActual := enja.WordsListEnString()
+	wordsListEnActual := enjas.WordsListEnString()
 
 	if wordsListEnExpect != wordsListEnActual {
 		t.Errorf("%v != %v\n", wordsListEnExpect, wordsListEnActual)
 	}
 
-	// enja.MyEnstring() (my.go: MyEnString())
+	// enjas.MyEnstring() (my.go: MyEnString())
 	myEnExpect := "my"
-	myEnActual := enja.MyEnString()
+	myEnActual := enjas.MyEnString()
 
 	if myEnExpect != myEnActual {
 		t.Errorf("%v != %v\n", myEnExpect, myEnActual)
 	}
 
-	// enja.RespectEnString() (respect.go: RespectEnString())
+	// enjas.RespectEnString() (respect.go: RespectEnString())
 	respectEnExpect := "respect"
-	respectEnActual := enja.RespectEnString()
+	respectEnActual := enjas.RespectEnString()
 
 	if respectEnExpect != respectEnActual {
 		t.Errorf("%v != %v\n", respectEnExpect, respectEnActual)
 	}
 
-	// enja.WillEnString() (will.go: WillEnString())
+	// enjas.WillEnString() (will.go: WillEnString())
 	willEnExpect := "will"
-	willEnActual := enja.WillEnString()
+	willEnActual := enjas.WillEnString()
 
 	if willEnExpect != willEnActual {
 		t.Errorf("%v != %v\n", willEnExpect, willEnActual)
 	}
 
-	// enja.IndividualEnString() (individual.go: IndividualEnString())
+	// enjas.IndividualEnString() (individual.go: IndividualEnString())
 	individualEnExpect := "individual"
-	individualEnActual := enja.IndividualEnString()
+	individualEnActual := enjas.IndividualEnString()
 
 	if individualEnExpect != individualEnActual {
 		t.Errorf("%v != %v\n", individualEnExpect, individualEnActual)
 	}
 
-	// enja.PositiveEnString() (positive.go: PositiveEnString())
+	// enjas.PositiveEnString() (positive.go: PositiveEnString())
 	positiveEnExpect := "positive"
-	positiveEnActual := enja.PositiveEnString()
+	positiveEnActual := enjas.PositiveEnString()
 
 	if positiveEnExpect != positiveEnActual {
 		t.Errorf("%v != %v\n", positiveEnExpect, positiveEnActual)
 	}
 
-	// enja.NegativeEnstring() (negative.go: NegativeEnString())
+	// enjas.NegativeEnstring() (negative.go: NegativeEnString())
 	negativeEnExpect := "negative"
-	negativeEnActual := enja.NegativeEnString()
+	negativeEnActual := enjas.NegativeEnString()
 
 	if negativeEnExpect != negativeEnActual {
 		t.Errorf("%v != %v\n", negativeEnExpect, negativeEnActual)
 	}
 
-	// enja.OutlookEnstring() (outlook.go: OutlookEnString())
+	// enjas.OutlookEnstring() (outlook.go: OutlookEnString())
 	outlookEnExpect := "outlook"
-	outlookEnActual := enja.OutlookEnString()
+	outlookEnActual := enjas.OutlookEnString()
 
 	if outlookEnExpect != outlookEnActual {
 		t.Errorf("%v != %v\n", outlookEnExpect, outlookEnActual)
 	}
 
-	// enja.MaintainEnstring() (maintain.go: MaintainEnString())
+	// enjas.MaintainEnstring() (maintain.go: MaintainEnString())
 	maintainEnExpect := "maintain"
-	maintainEnActual := enja.MaintainEnString()
+	maintainEnActual := enjas.MaintainEnString()
 
 	if maintainEnExpect != maintainEnActual {
 		t.Errorf("%v != %v\n", maintainEnExpect, maintainEnActual)
 	}
 
-	// enja.AttitudeEnstring() (attitude.go: AttitudeEnString())
+	// enjas.AttitudeEnstring() (attitude.go: AttitudeEnString())
 	attitudeEnExpect := "attitude"
-	attitudeEnActual := enja.AttitudeEnString()
+	attitudeEnActual := enjas.AttitudeEnString()
 
 	if attitudeEnExpect != attitudeEnActual {
 		t.Errorf("%v != %v\n", attitudeEnExpect, attitudeEnActual)
 	}
 
-	// enja.FairEnstring() (fair.go: FairEnString())
+	// enjas.FairEnstring() (fair.go: FairEnString())
 	fairEnExpect := "fair"
-	fairEnActual := enja.FairEnString()
+	fairEnActual := enjas.FairEnString()
 
 	if fairEnExpect != fairEnActual {
 		t.Errorf("%v != %v\n", fairEnExpect, fairEnActual)
 	}
 
-	// enja.NationalEnstring() (national.go: NationalEnString())
+	// enjas.NationalEnstring() (national.go: NationalEnString())
 	nationalEnExpect := "national"
-	nationalEnActual := enja.NationalEnString()
+	nationalEnActual := enjas.NationalEnString()
 
 	if nationalEnExpect != nationalEnActual {
 		t.Errorf("%v != %v\n", nationalEnExpect, nationalEnActual)
 	}
 
-	// enja.OriginEnstring() (origin.go: OriginEnString())
+	// enjas.OriginEnstring() (origin.go: OriginEnString())
 	originEnExpect := "origin"
-	originEnActual := enja.OriginEnString()
+	originEnActual := enjas.OriginEnString()
 
 	if originEnExpect != originEnActual {
 		t.Errorf("%v != %v\n", originEnExpect, originEnActual)
 	}
 
-	// enja.GenderEnstring() (gender.go: GenderEnString())
+	// enjas.GenderEnstring() (gender.go: GenderEnString())
 	genderEnExpect := "gender"
-	genderEnActual := enja.GenderEnString()
+	genderEnActual := enjas.GenderEnString()
 
 	if genderEnExpect != genderEnActual {
 		t.Errorf("%v != %v\n", genderEnExpect, genderEnActual)
 	}
 
-	// enja.CreedEnstring() (creed.go: CreedEnString())
+	// enjas.CreedEnstring() (creed.go: CreedEnString())
 	creedEnExpect := "creed"
-	creedEnActual := enja.CreedEnString()
+	creedEnActual := enjas.CreedEnString()
 
 	if creedEnExpect != creedEnActual {
 		t.Errorf("%v != %v\n", creedEnExpect, creedEnActual)
 	}
 
-	//enja.EqualityEnstring() (equality.go: EqualityEnString())
+	//enjas.EqualityEnstring() (equality.go: EqualityEnString())
 	equalityEnExpect := "equality"
-	equalityEnActual := enja.EqualityEnString()
+	equalityEnActual := enjas.EqualityEnString()
 
 	if equalityEnExpect != equalityEnActual {
 		t.Errorf("%v != %v\n", equalityEnExpect, equalityEnActual)
