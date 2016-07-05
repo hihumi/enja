@@ -55,6 +55,7 @@ func TestWordsListJaString(t *testing.T) {
 [d]:
 
 [e]:
+  equality,
 
 [f]:
   fair,
@@ -129,6 +130,7 @@ func TestWordsListPrintJa(t *testing.T) {
 [d]:
 
 [e]:
+  equality,
 
 [f]:
   fair,
@@ -552,6 +554,32 @@ func TestCreedJaString(t *testing.T) {
 func TestCreedPrintJa(t *testing.T) {
 	expect := CreedJaString()
 	actual := `[名]: [C]: [主な意味]: 信条、信仰`
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+
+// equality.go
+func TestEqualityEnString(t *testing.T) {
+	expect := "equality"
+	actual := EqualityEnString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestEqualityJaString(t *testing.T) {
+	expect := `[名]: [U]: [主な意味]: 1. 平等、均等 2. 均質性、一様性 3. (数学)等式`
+	actual := EqualityJaString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestEqualityPrintJa(t *testing.T) {
+	expect := EqualityJaString()
+	actual := `[名]: [U]: [主な意味]: 1. 平等、均等 2. 均質性、一様性 3. (数学)等式`
 
 	if expect != actual {
 		t.Errorf("%s != %s\n", expect, actual)

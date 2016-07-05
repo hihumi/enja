@@ -24,6 +24,7 @@ func SwitchEnWord(enWord string) {
 		// d
 
 		// e
+		equality = enja.EqualityEnString()
 
 		// f
 		fair = enja.FairEnString()
@@ -98,6 +99,8 @@ func SwitchEnWord(enWord string) {
 	// d
 
 	// e
+	case equality:
+		enja.EqualityPrintJa()
 
 	// f
 	case fair:

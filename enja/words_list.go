@@ -29,6 +29,7 @@ func WordsListJaString() string {
 [d]:
 
 [e]:
+  equality,
 
 [f]:
   fair,
