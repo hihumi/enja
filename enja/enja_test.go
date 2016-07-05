@@ -50,6 +50,7 @@ func TestWordsListJaString(t *testing.T) {
 [b]:
 
 [c]:
+  creed,
 
 [d]:
 
@@ -123,6 +124,7 @@ func TestWordsListPrintJa(t *testing.T) {
 [b]:
 
 [c]:
+  creed,
 
 [d]:
 
@@ -524,6 +526,32 @@ func TestGenderPrintJa(t *testing.T) {
 	expect := GenderJaString()
 	actual := `[名]: [C, U]: [主な意味]: (社会的・文化的に形成される)性別
 (なお、sexは、生物的・肉体的な性別)`
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+
+// creed.go
+func TestCreedEnString(t *testing.T) {
+	expect := "creed"
+	actual := CreedEnString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestCreedJaString(t *testing.T) {
+	expect := `[名]: [C]: [主な意味]: 信条、信仰`
+	actual := CreedJaString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestCreedPrintJa(t *testing.T) {
+	expect := CreedJaString()
+	actual := `[名]: [C]: [主な意味]: 信条、信仰`
 
 	if expect != actual {
 		t.Errorf("%s != %s\n", expect, actual)

@@ -8,13 +8,13 @@ import (
 )
 
 // template
-// enja.FooEnstring() (bar.go: FooEnString())
+// enja.EnWordEnstring() (enWord.go: EnWordEnString())
 /*
-	barEnExpect := "enword"
-	barEnActual := enja.FooEnString()
+	enwordEnExpect := "enWord"
+	enwordEnActual := enja.FooEnString()
 
-	if barEnExpect != barEnActual {
-		t.Errorf("%v != %v\n", barEnExpect, barEnActual)
+	if enwordEnExpect != enwordEnActual {
+		t.Errorf("%v != %v\n", enwordEnExpect, enwordEnActual)
 	}
 */
 
@@ -131,4 +131,11 @@ func TestSwitchEnWord(t *testing.T) {
 		t.Errorf("%v != %v\n", genderEnExpect, genderEnActual)
 	}
 
+	// enja.CreedEnstring() (creed.go: CreedEnString())
+	creedEnExpect := "creed"
+	creedEnActual := enja.CreedEnString()
+
+	if creedEnExpect != creedEnActual {
+		t.Errorf("%v != %v\n", creedEnExpect, creedEnActual)
+	}
 }

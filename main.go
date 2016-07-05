@@ -34,6 +34,6 @@ func main() {
 
 		SwitchEnWord(enWord)
 
-		fmt.Printf(">>> ")
+		fmt.Printf("\n>>> ")
 	}
 }

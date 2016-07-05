@@ -4,29 +4,29 @@ import (
 	"fmt"
 )
 
-type EnwordStruct struct {
-	enwordEnString, enwordJaString, enword string
+type EnWordStruct struct {
+	enWordEnString, enWordJaString, enWord string
 }
 
-func EnwordEnString() string {
-	var EnwordEn EnwordStruct
-	EnwordEn.enwordEnString = "enword"
+func EnWordEnString() string {
+	var EnWordEn EnWordStruct
+	EnWordEn.enWordEnString = "enWord"
 
-	return EnwordEn.enwordEnString
+	return EnWordEn.enWordEnString
 }
 
-func EnwordJaString() string {
-	var EnwordJa EnwordStruct
-	EnwordJa.enwordJaString = `日本語解説`
+func EnWordJaString() string {
+	var EnWordJa EnWordStruct
+	EnWordJa.enWordJaString = `日本語解説`
 
-	return EnwordJa.enwordJaString
+	return EnWordJa.enWordJaString
 }
 
-func EnwordPrintJa() {
-	var Enword EnwordStruct
-	Enword.enword = EnwordJaString()
+func EnWordPrintJa() {
+	var EnWord EnWordStruct
+	EnWord.enWord = EnWordJaString()
 
-	fmt.Println(Enword.enword)
+	fmt.Println(EnWord.enWord)
 
 	return
 }

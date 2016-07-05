@@ -14,6 +14,7 @@ func SwitchEnWord(enWord string) {
 
 		// a b c d e f g h i j k l m n o p q r s t u v w x y z
 		attitude   = enja.AttitudeEnString()
+		creed      = enja.CreedEnString()
 		fair       = enja.FairEnString()
 		gender     = enja.GenderEnString()
 		individual = enja.IndividualEnString()
@@ -35,6 +36,8 @@ func SwitchEnWord(enWord string) {
 	// a b c d e f g h i j k l m n o p q r s t u v w x y z
 	case attitude:
 		enja.AttitudePrintJa()
+	case creed:
+		enja.CreedPrintJa()
 	case fair:
 		enja.FairPrintJa()
 	case gender:
