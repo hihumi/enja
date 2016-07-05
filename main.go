@@ -12,11 +12,13 @@ func main() {
 	fmt.Printf(">>> ")
 
 	scanner := bufio.NewScanner(os.Stdin)
-
 	for scanner.Scan() {
+
+		enWord := scanner.Text()
+
 		q := "q"
 		Q := "Q"
-		if q == scanner.Text() || Q == scanner.Text() {
+		if q == enWord || Q == enWord {
 			fmt.Printf("\n--- See you! --- \n")
 			break
 		}
@@ -25,7 +27,7 @@ func main() {
 			fmt.Fprintln(os.Stderr, "おっと！ おそらく読み込みエラーです:", err)
 		}
 
-		SwitchEnWord(scanner.Text())
+		SwitchEnWord(enWord)
 
 		fmt.Printf(">>> ")
 	}
