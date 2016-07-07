@@ -75,6 +75,7 @@ func TestWordsListJaString(t *testing.T) {
 [k]:
 
 [l]:
+  lean,
 
 [m]:
   my,
@@ -152,6 +153,7 @@ func TestWordsListPrintJa(t *testing.T) {
 [k]:
 
 [l]:
+  lean,
 
 [m]:
   my,
@@ -636,6 +638,34 @@ func TestConstitutionJaString(t *testing.T) {
 func TestConstitutionPrintJa(t *testing.T) {
 	expect := ConstitutionJaString()
 	actual := `[名]: [C]: [主な意味]: 憲法`
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+
+// lean.go
+func TestLeanEnString(t *testing.T) {
+	expect := "lean"
+	actual := LeanEnString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestLeanJaString(t *testing.T) {
+	expect := `[動]: [主な意味]: 1. ...傾ける、2. 傾く 3. 寄りかかる
+([形]: 1. (身体などが)引き締まった 2. (身体などが)痩せた 3. (身体などが)細い)`
+	actual := LeanJaString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestLeanPrintJa(t *testing.T) {
+	expect := LeanJaString()
+	actual := `[動]: [主な意味]: 1. ...傾ける、2. 傾く 3. 寄りかかる
+([形]: 1. (身体などが)引き締まった 2. (身体などが)痩せた 3. (身体などが)細い)`
 
 	if expect != actual {
 		t.Errorf("%s != %s\n", expect, actual)

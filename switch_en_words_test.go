@@ -19,7 +19,7 @@ import (
 */
 
 func TestSwitchEnWord(t *testing.T) {
-	// enjas.WordListsEnstring() (word_lists.go: WordListsEnString())
+	// enjas.WordsListEnstring() (word_lists.go: WordsListEnString())
 	wordsListEnExpect := "words-list"
 	wordsListEnActual := enjas.WordsListEnString()
 
@@ -163,4 +163,11 @@ func TestSwitchEnWord(t *testing.T) {
 		t.Errorf("%v != %v\n", constitutionEnExpect, constitutionEnActual)
 	}
 
+	// enjas.LeanEnstring() (lean.go: LeanEnString())
+	leanEnExpect := "lean"
+	leanEnActual := enjas.LeanEnString()
+
+	if leanEnExpect != leanEnActual {
+		t.Errorf("%v != %v\n", leanEnExpect, leanEnActual)
+	}
 }

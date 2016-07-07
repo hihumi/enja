@@ -5,7 +5,7 @@ import (
 )
 
 type WordsListStruct struct {
-	wordsListEnString, wordsListJaString, wordsList string
+	wordsListEnString, wordsListReturnString, wordsList string
 }
 
 func WordsListEnString() string {
@@ -15,9 +15,9 @@ func WordsListEnString() string {
 	return WordsListEn.wordsListEnString
 }
 
-func WordsListJaString() string {
-	var WordsListJa WordsListStruct
-	WordsListJa.wordsListJaString = `words list:
+func WordsListReturnString() string {
+	var WordsListReturn WordsListStruct
+	WordsListReturn.wordsListReturnString = `words list:
 [a]:
   attitude,
 
@@ -49,6 +49,7 @@ func WordsListJaString() string {
 [k]:
 
 [l]:
+  lean,
 
 [m]:
   my,
@@ -87,14 +88,14 @@ func WordsListJaString() string {
 
 [z]:`
 
-	return WordsListJa.wordsListJaString
+	return WordsListReturn.wordsListReturnString
 }
 
-func WordsListPrintJa() {
+func WordsListPrintString() {
 	var WordsList WordsListStruct
-	WordsList.wordsList = WordsListJaString()
+	WordsList.wordsList = WordsListReturnString()
 
 	fmt.Println(WordsList.wordsList)
 
-	return
+	return 
 }

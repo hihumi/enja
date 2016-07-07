@@ -44,6 +44,7 @@ func SwitchEnWord(enWord string) {
 		// k
 
 		// l
+		lean = enjas.LeanEnString()
 
 		// m
 		maintain = enjas.MaintainEnString()
@@ -85,7 +86,7 @@ func SwitchEnWord(enWord string) {
 
 	switch enWord {
 	case wordsList:
-		enjas.WordsListPrintJa()
+		enjas.WordsListPrintString()
 
 	// a b c d e f g h i j k l m n o p q r s t u v w x y z
 	// a
@@ -127,6 +128,8 @@ func SwitchEnWord(enWord string) {
 	// k
 
 	// l
+	case lean:
+		enjas.LeanPrintJa()
 
 	// m
 	case maintain:
