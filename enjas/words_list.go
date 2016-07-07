@@ -97,5 +97,5 @@ func WordsListPrintString() {
 
 	fmt.Println(WordsList.wordsList)
 
-	return 
+	return
 }

@@ -42,7 +42,7 @@ func TestWordListsEnString(t *testing.T) {
 		t.Errorf("%s != %s\n", expect, actual)
 	}
 }
-func TestWordsListJaString(t *testing.T) {
+func TestWordsListReturnString(t *testing.T) {
 	expect := `words list:
 [a]:
   attitude,
@@ -113,14 +113,14 @@ func TestWordsListJaString(t *testing.T) {
 [y]:
 
 [z]:`
-	actual := WordsListJaString()
+	actual := WordsListReturnString()
 
 	if expect != actual {
 		t.Errorf("%s != %s\n", expect, actual)
 	}
 }
-func TestWordsListPrintJa(t *testing.T) {
-	expect := WordsListJaString()
+func TestWordsListPrintString(t *testing.T) {
+	expect := WordsListReturnString()
 	actual := `words list:
 [a]:
   attitude,
