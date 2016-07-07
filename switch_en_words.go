@@ -19,7 +19,8 @@ func SwitchEnWord(enWord string) {
 		// b
 
 		// c
-		creed = enjas.CreedEnString()
+		constitution = enjas.ConstitutionEnString()
+		creed        = enjas.CreedEnString()
 
 		// d
 
@@ -94,6 +95,8 @@ func SwitchEnWord(enWord string) {
 	// b
 
 	// c
+	case constitution:
+		enjas.ConstitutionPrintJa()
 	case creed:
 		enjas.CreedPrintJa()
 
@@ -107,7 +110,7 @@ func SwitchEnWord(enWord string) {
 	case fair:
 		enjas.FairPrintJa()
 
-		// g
+	// g
 	case guarantee:
 		enjas.GuaranteePrintJa()
 	case gender:

@@ -50,6 +50,7 @@ func TestWordsListJaString(t *testing.T) {
 [b]:
 
 [c]:
+  constitution,
   creed,
 
 [d]:
@@ -126,6 +127,7 @@ func TestWordsListPrintJa(t *testing.T) {
 [b]:
 
 [c]:
+  constitution,
   creed,
 
 [d]:
@@ -608,6 +610,32 @@ func TestGuaranteeJaString(t *testing.T) {
 func TestGuaranteePrintJa(t *testing.T) {
 	expect := GuaranteeJaString()
 	actual := `[動]: [主な意味]: ...を保証する、...を約束する、...を保護する`
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+
+// constitution.go
+func TestConstitutionEnString(t *testing.T) {
+	expect := "constitution"
+	actual := ConstitutionEnString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestConstitutionJaString(t *testing.T) {
+	expect := `[名]: [C]: [主な意味]: 憲法`
+	actual := ConstitutionJaString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestConstitutionPrintJa(t *testing.T) {
+	expect := ConstitutionJaString()
+	actual := `[名]: [C]: [主な意味]: 憲法`
 
 	if expect != actual {
 		t.Errorf("%s != %s\n", expect, actual)

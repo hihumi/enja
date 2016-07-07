@@ -24,6 +24,7 @@ func WordsListJaString() string {
 [b]:
 
 [c]:
+  constitution,
   creed,
 
 [d]:
