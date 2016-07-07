@@ -8,7 +8,7 @@ import (
 // foo.go
 /*
 func TestEnWordEnString(t *testing.T) {
-	expect := "enword"
+	expect := "enWord"
 	actual := EnWordEnString()
 
 	if expect != actual {
@@ -62,6 +62,7 @@ func TestWordsListJaString(t *testing.T) {
 
 [g]:
   gender,
+  guarantee,
 
 [h]:
 
@@ -137,6 +138,7 @@ func TestWordsListPrintJa(t *testing.T) {
 
 [g]:
   gender,
+  guarantee,
 
 [h]:
 
@@ -580,6 +582,32 @@ func TestEqualityJaString(t *testing.T) {
 func TestEqualityPrintJa(t *testing.T) {
 	expect := EqualityJaString()
 	actual := `[名]: [U]: [主な意味]: 1. 平等、均等 2. 均質性、一様性 3. (数学)等式`
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+
+// guarantee.go
+func TestGuaranteeEnString(t *testing.T) {
+	expect := "guarantee"
+	actual := GuaranteeEnString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestGuaranteeJaString(t *testing.T) {
+	expect := `[動]: [主な意味]: ...を保証する、...を約束する、...を保護する`
+	actual := GuaranteeJaString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestGuaranteePrintJa(t *testing.T) {
+	expect := GuaranteeJaString()
+	actual := `[動]: [主な意味]: ...を保証する、...を約束する、...を保護する`
 
 	if expect != actual {
 		t.Errorf("%s != %s\n", expect, actual)

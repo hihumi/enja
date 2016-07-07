@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"./enjas"
-	//_ "github.com/hihumi/enja/enjas"
+	// _ "github.com/hihumi/enja/enjas"
 )
 
 func SwitchEnWord(enWord string) {
@@ -30,7 +30,8 @@ func SwitchEnWord(enWord string) {
 		fair = enjas.FairEnString()
 
 		// g
-		gender = enjas.GenderEnString()
+		gender    = enjas.GenderEnString()
+		guarantee = enjas.GuaranteeEnString()
 
 		// h
 
@@ -106,7 +107,9 @@ func SwitchEnWord(enWord string) {
 	case fair:
 		enjas.FairPrintJa()
 
-	// g
+		// g
+	case guarantee:
+		enjas.GuaranteePrintJa()
 	case gender:
 		enjas.GenderPrintJa()
 

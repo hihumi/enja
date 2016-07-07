@@ -147,4 +147,11 @@ func TestSwitchEnWord(t *testing.T) {
 		t.Errorf("%v != %v\n", equalityEnExpect, equalityEnActual)
 	}
 
+	// enjas.GuaranteeEnstring() (guarantee.go: GuaranteeEnString())
+	guaranteeEnExpect := "guarantee"
+	guaranteeEnActual := enjas.GuaranteeEnString()
+
+	if guaranteeEnExpect != guaranteeEnActual {
+		t.Errorf("%v != %v\n", guaranteeEnExpect, guaranteeEnActual)
+	}
 }

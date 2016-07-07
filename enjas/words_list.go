@@ -36,6 +36,7 @@ func WordsListJaString() string {
 
 [g]:
   gender,
+  guarantee,
 
 [h]:
 
