@@ -74,6 +74,7 @@ func WordsListReturnString() string {
   respect,
 
 [s]:
+  statue,
 
 [t]:
 

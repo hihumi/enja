@@ -8,14 +8,13 @@ import (
 )
 
 // template
-// enjas.EnWordEnstring() (enWord.go: EnWordEnString())
-/*
-	enWordEnExpect := "enWord"
-	enWordEnActual := enjas.EnWordEnString()
+/*  // enjas.EnWordEnstring() (enWord.go: EnWordEnString())
+enWordEnExpect := "enWord"
+enWordEnActual := enjas.EnWordEnString()
 
-	if enWordEnExpect != enWordEnActual {
-		t.Errorf("%v != %v\n", enWordEnExpect, enWordEnActual)
-	}
+if enWordEnExpect != enWordEnActual {
+	t.Errorf("%v != %v\n", enWordEnExpect, enWordEnActual)
+}
 */
 
 func TestSwitchEnWord(t *testing.T) {
@@ -185,6 +184,14 @@ func TestSwitchEnWord(t *testing.T) {
 
 	if gazeEnExpect != gazeEnActual {
 		t.Errorf("%v != %v\n", gazeEnExpect, gazeEnActual)
+	}
+
+	// enjas.StatueEnstring() (statue.go: StatueEnString())
+	statueEnExpect := "statue"
+	statueEnActual := enjas.StatueEnString()
+
+	if statueEnExpect != statueEnActual {
+		t.Errorf("%v != %v\n", statueEnExpect, statueEnActual)
 	}
 
 }

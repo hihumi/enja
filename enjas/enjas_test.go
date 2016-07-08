@@ -5,7 +5,7 @@ import (
 )
 
 // template
-/* //foo.go
+/* //enWord.go
 func TestEnWordEnString(t *testing.T) {
 	expect := "enWord"
 	actual := EnWordEnString()
@@ -99,6 +99,7 @@ func TestWordsListReturnString(t *testing.T) {
   respect,
 
 [s]:
+  statue,
 
 [t]:
 
@@ -179,6 +180,7 @@ func TestWordsListPrintString(t *testing.T) {
   respect,
 
 [s]:
+  statue,
 
 [t]:
 
@@ -723,6 +725,32 @@ func TestGazePrintJa(t *testing.T) {
 	expect := GazeJaString()
 	actual := `[動]: [主な意味]: じっと見る、見つめる、凝視する、注視する
 ([名]: 見つめること、凝視、注視)`
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+
+//statue.go
+func TestStatueEnString(t *testing.T) {
+	expect := "statue"
+	actual := StatueEnString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestStatueJaString(t *testing.T) {
+	expect := `[名]: [C]: [主な意味]: (人などの)像、彫像`
+	actual := StatueJaString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestStatuePrintJa(t *testing.T) {
+	expect := StatueJaString()
+	actual := `[名]: [C]: [主な意味]: (人などの)像、彫像`
 
 	if expect != actual {
 		t.Errorf("%s != %s\n", expect, actual)
