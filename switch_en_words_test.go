@@ -170,4 +170,13 @@ func TestSwitchEnWord(t *testing.T) {
 	if leanEnExpect != leanEnActual {
 		t.Errorf("%v != %v\n", leanEnExpect, leanEnActual)
 	}
+
+	// enjas.PillarEnstring() (pillar.go: PillarEnString())
+	pillarEnExpect := "pillar"
+	pillarEnActual := enjas.PillarEnString()
+
+	if pillarEnExpect != pillarEnActual {
+		t.Errorf("%v != %v\n", pillarEnExpect, pillarEnActual)
+	}
+
 }

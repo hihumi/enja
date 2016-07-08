@@ -64,6 +64,7 @@ func WordsListReturnString() string {
   outlook,
 
 [p]:
+  pillar,
   positive,
 
 [q]:

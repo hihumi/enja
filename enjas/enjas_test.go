@@ -90,6 +90,7 @@ func TestWordsListReturnString(t *testing.T) {
   outlook,
 
 [p]:
+  pillar,
   positive,
 
 [q]:
@@ -168,6 +169,7 @@ func TestWordsListPrintString(t *testing.T) {
   outlook,
 
 [p]:
+  pillar,
   positive,
 
 [q]:
@@ -666,6 +668,32 @@ func TestLeanPrintJa(t *testing.T) {
 	expect := LeanJaString()
 	actual := `[動]: [主な意味]: 1. ...傾ける、2. 傾く 3. 寄りかかる
 ([形]: 1. (身体などが)引き締まった 2. (身体などが)痩せた 3. (身体などが)細い)`
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+
+// foo.go
+func TestPillarEnString(t *testing.T) {
+	expect := "pillar"
+	actual := PillarEnString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestPillarJaString(t *testing.T) {
+	expect := `[名]: [C]: [主な意味]: 1. (建築物などの)柱、支柱 2. (制度などの)中心部分、要所 3. (人物などの)大黒柱、重要人物、中心人物`
+	actual := PillarJaString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestPillarPrintJa(t *testing.T) {
+	expect := PillarJaString()
+	actual := `[名]: [C]: [主な意味]: 1. (建築物などの)柱、支柱 2. (制度などの)中心部分、要所 3. (人物などの)大黒柱、重要人物、中心人物`
 
 	if expect != actual {
 		t.Errorf("%s != %s\n", expect, actual)
