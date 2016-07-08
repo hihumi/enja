@@ -5,8 +5,7 @@ import (
 )
 
 // template
-// foo.go
-/*
+/* //foo.go
 func TestEnWordEnString(t *testing.T) {
 	expect := "enWord"
 	actual := EnWordEnString()
@@ -62,6 +61,7 @@ func TestWordsListReturnString(t *testing.T) {
   fair,
 
 [g]:
+  gaze,
   gender,
   guarantee,
 
@@ -141,6 +141,7 @@ func TestWordsListPrintString(t *testing.T) {
   fair,
 
 [g]:
+  gaze,
   gender,
   guarantee,
 
@@ -674,7 +675,7 @@ func TestLeanPrintJa(t *testing.T) {
 	}
 }
 
-// foo.go
+// pillar.go
 func TestPillarEnString(t *testing.T) {
 	expect := "pillar"
 	actual := PillarEnString()
@@ -694,6 +695,34 @@ func TestPillarJaString(t *testing.T) {
 func TestPillarPrintJa(t *testing.T) {
 	expect := PillarJaString()
 	actual := `[名]: [C]: [主な意味]: 1. (建築物などの)柱、支柱 2. (制度などの)中心部分、要所 3. (人物などの)大黒柱、重要人物、中心人物`
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+
+// gaze.go
+func TestGazeEnString(t *testing.T) {
+	expect := "gaze"
+	actual := GazeEnString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestGazeJaString(t *testing.T) {
+	expect := `[動]: [主な意味]: じっと見る、見つめる、凝視する、注視する
+([名]: 見つめること、凝視、注視)`
+	actual := GazeJaString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestGazePrintJa(t *testing.T) {
+	expect := GazeJaString()
+	actual := `[動]: [主な意味]: じっと見る、見つめる、凝視する、注視する
+([名]: 見つめること、凝視、注視)`
 
 	if expect != actual {
 		t.Errorf("%s != %s\n", expect, actual)

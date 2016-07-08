@@ -36,6 +36,7 @@ func WordsListReturnString() string {
   fair,
 
 [g]:
+  gaze,
   gender,
   guarantee,
 

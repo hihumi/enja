@@ -179,4 +179,12 @@ func TestSwitchEnWord(t *testing.T) {
 		t.Errorf("%v != %v\n", pillarEnExpect, pillarEnActual)
 	}
 
+	// enjas.GazeEnstring() (gaze.go: GazeEnString())
+	gazeEnExpect := "gaze"
+	gazeEnActual := enjas.GazeEnString()
+
+	if gazeEnExpect != gazeEnActual {
+		t.Errorf("%v != %v\n", gazeEnExpect, gazeEnActual)
+	}
+
 }

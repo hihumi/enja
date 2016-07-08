@@ -31,6 +31,7 @@ func SwitchEnWord(enWord string) {
 		fair = enjas.FairEnString()
 
 		// g
+		gaze      = enjas.GazeEnString()
 		gender    = enjas.GenderEnString()
 		guarantee = enjas.GuaranteeEnString()
 
@@ -113,10 +114,12 @@ func SwitchEnWord(enWord string) {
 		enjas.FairPrintJa()
 
 	// g
-	case guarantee:
-		enjas.GuaranteePrintJa()
+	case gaze:
+		enjas.GazePrintJa()
 	case gender:
 		enjas.GenderPrintJa()
+	case guarantee:
+		enjas.GuaranteePrintJa()
 
 	// h
 
