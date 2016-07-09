@@ -76,6 +76,7 @@ func TestWordsListReturnString(t *testing.T) {
 
 [l]:
   lean,
+  liberty,
 
 [m]:
   my,
@@ -157,6 +158,7 @@ func TestWordsListPrintString(t *testing.T) {
 
 [l]:
   lean,
+  liberty,
 
 [m]:
   my,
@@ -751,6 +753,32 @@ func TestStatueJaString(t *testing.T) {
 func TestStatuePrintJa(t *testing.T) {
 	expect := StatueJaString()
 	actual := `[名]: [C]: [主な意味]: (人などの)像、彫像`
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+
+//liberty.go
+func TestLibertyEnString(t *testing.T) {
+	expect := "liberty"
+	actual := LibertyEnString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestLibertyJaString(t *testing.T) {
+	expect := `[名]: [C, U]: [主な意味]: 自由、独立、権利、特権、特典`
+	actual := LibertyJaString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestLibertyPrintJa(t *testing.T) {
+	expect := LibertyJaString()
+	actual := `[名]: [C, U]: [主な意味]: 自由、独立、権利、特権、特典`
 
 	if expect != actual {
 		t.Errorf("%s != %s\n", expect, actual)

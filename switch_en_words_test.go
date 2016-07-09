@@ -194,4 +194,12 @@ func TestSwitchEnWord(t *testing.T) {
 		t.Errorf("%v != %v\n", statueEnExpect, statueEnActual)
 	}
 
+	// enjas.LibertyEnstring() (liberty.go: LibertyEnString())
+	libertyEnExpect := "liberty"
+	libertyEnActual := enjas.LibertyEnString()
+
+	if libertyEnExpect != libertyEnActual {
+		t.Errorf("%v != %v\n", libertyEnExpect, libertyEnActual)
+	}
+
 }
