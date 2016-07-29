@@ -20,6 +20,7 @@ func WordsListReturnString() string {
 	WordsListReturn.wordsListReturnString = `words list:
 [a]:
   attitude,
+  awful,
 
 [b]:
 

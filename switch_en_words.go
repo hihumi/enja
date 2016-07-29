@@ -15,6 +15,7 @@ func SwitchEnWord(enWord string) {
 		// a b c d e f g h i j k l m n o p q r s t u v w x y z
 		// a
 		attitude = enjas.AttitudeEnString()
+		awful = enjas.AwfulEnString()
 
 		// b
 
@@ -100,6 +101,8 @@ func SwitchEnWord(enWord string) {
 	// a
 	case attitude:
 		enjas.AttitudePrintJa()
+	case awful:
+		enjas.AwfulPrintJa()
 
 	// b
 

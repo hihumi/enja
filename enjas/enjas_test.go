@@ -5,7 +5,7 @@ import (
 )
 
 // template
-/* //enWord.go
+/* // enWord.go
 func TestEnWordEnString(t *testing.T) {
 	expect := "enWord"
 	actual := EnWordEnString()
@@ -45,6 +45,7 @@ func TestWordsListReturnString(t *testing.T) {
 	expect := `words list:
 [a]:
   attitude,
+  awful,
 
 [b]:
 
@@ -131,6 +132,7 @@ func TestWordsListPrintString(t *testing.T) {
 	actual := `words list:
 [a]:
   attitude,
+  awful,
 
 [b]:
 
@@ -741,7 +743,7 @@ func TestGazePrintJa(t *testing.T) {
 	}
 }
 
-//statue.go
+// statue.go
 func TestStatueEnString(t *testing.T) {
 	expect := "statue"
 	actual := StatueEnString()
@@ -767,7 +769,7 @@ func TestStatuePrintJa(t *testing.T) {
 	}
 }
 
-//liberty.go
+// liberty.go
 func TestLibertyEnString(t *testing.T) {
 	expect := "liberty"
 	actual := LibertyEnString()
@@ -793,7 +795,7 @@ func TestLibertyPrintJa(t *testing.T) {
 	}
 }
 
-//subtle.go
+// subtle.go
 func TestSubtleEnString(t *testing.T) {
 	expect := "subtle"
 	actual := SubtleEnString()
@@ -819,7 +821,7 @@ func TestSubtlePrintJa(t *testing.T) {
 	}
 }
 
-//scent.go
+// scent.go
 func TestScentEnString(t *testing.T) {
 	expect := "scent"
 	actual := ScentEnString()
@@ -845,7 +847,7 @@ func TestScentPrintJa(t *testing.T) {
 	}
 }
 
-//perfume.go
+// perfume.go
 func TestPerfumeEnString(t *testing.T) {
 	expect := "perfume"
 	actual := PerfumeEnString()
@@ -871,8 +873,8 @@ func TestPerfumePrintJa(t *testing.T) {
 	}
 }
 
-//remind.go
-func TestEnWordEnString(t *testing.T) {
+// remind.go
+func TestRemindEnString(t *testing.T) {
 	expect := "remind"
 	actual := RemindEnString()
 
@@ -891,6 +893,32 @@ func TestRemindJaString(t *testing.T) {
 func TestRemindPrintJa(t *testing.T) {
 	expect := RemindJaString()
 	actual := `[動]: [主な意味]: 1. ...に思い出させる 2. ...に気付かせる`
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+
+// awful.go
+func TestAwfulEnString(t *testing.T) {
+	expect := "awful"
+	actual := AwfulEnString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestAwfulJaString(t *testing.T) {
+	expect := `[形]: [主な意味]: 1. ひどい 2. (くだけた表現として)ものすごい`
+	actual := AwfulJaString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestAwfulPrintJa(t *testing.T) {
+	expect := AwfulJaString()
+	actual := `[形]: [主な意味]: 1. ひどい 2. (くだけた表現として)ものすごい`
 
 	if expect != actual {
 		t.Errorf("%s != %s\n", expect, actual)

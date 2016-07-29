@@ -9,12 +9,12 @@ import (
 
 // template
 /* // enjas.EnWordEnstring() (enWord.go: EnWordEnString())
-enWordEnExpect := "enWord"
-enWordEnActual := enjas.EnWordEnString()
+	enWordEnExpect := "enWord"
+	enWordEnActual := enjas.EnWordEnString()
 
-if enWordEnExpect != enWordEnActual {
-	t.Errorf("%v != %v\n", enWordEnExpect, enWordEnActual)
-}
+	if enWordEnExpect != enWordEnActual {
+		t.Errorf("%v != %v\n", enWordEnExpect, enWordEnActual)
+	}
 */
 
 func TestSwitchEnWord(t *testing.T) {
@@ -232,6 +232,14 @@ func TestSwitchEnWord(t *testing.T) {
 
 	if remindEnExpect != remindEnActual {
 		t.Errorf("%v != %v\n", remindEnExpect, remindEnActual)
+	}
+
+	// enjas.AwfulEnstring() (awful.go: AwfulEnString())
+	awfulEnExpect := "awful"
+	awfulEnActual := enjas.AwfulEnString()
+
+	if awfulEnExpect != awfulEnActual {
+		t.Errorf("%v != %v\n", awfulEnExpect, awfulEnActual)
 	}
 
 }
