@@ -91,6 +91,7 @@ func TestWordsListReturnString(t *testing.T) {
   outlook,
 
 [p]:
+  perfume,
   pillar,
   positive,
 
@@ -175,6 +176,7 @@ func TestWordsListPrintString(t *testing.T) {
   outlook,
 
 [p]:
+  perfume,
   pillar,
   positive,
 
@@ -835,6 +837,32 @@ func TestScentJaString(t *testing.T) {
 func TestScentPrintJa(t *testing.T) {
 	expect := ScentJaString()
 	actual := `[名]: [C, U]: [主な意味]: 1. 香り、匂い 2. 臭い、臭跡`
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+
+//perfume.go
+func TestPerfumeEnString(t *testing.T) {
+	expect := "perfume"
+	actual := PerfumeEnString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestPerfumeJaString(t *testing.T) {
+	expect := `[名]: [C, U]: [主な意味]: 1. 香水、香料、芳香剤 2. 香り、芳香`
+	actual := PerfumeJaString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestPerfumePrintJa(t *testing.T) {
+	expect := PerfumeJaString()
+	actual := `[名]: [C, U]: [主な意味]: 1. 香水、香料、芳香剤 2. 香り、芳香`
 
 	if expect != actual {
 		t.Errorf("%s != %s\n", expect, actual)

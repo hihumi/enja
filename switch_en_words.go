@@ -61,6 +61,7 @@ func SwitchEnWord(enWord string) {
 		outlook = enjas.OutlookEnString()
 
 		// p
+		perfume  = enjas.PerfumeEnString()
 		pillar   = enjas.PillarEnString()
 		positive = enjas.PositiveEnString()
 
@@ -160,6 +161,8 @@ func SwitchEnWord(enWord string) {
 		enjas.OutlookPrintJa()
 
 	// p
+	case perfume:
+		enjas.PerfumePrintJa()
 	case pillar:
 		enjas.PillarPrintJa()
 	case positive:
