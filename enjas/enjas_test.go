@@ -100,6 +100,7 @@ func TestWordsListReturnString(t *testing.T) {
   respect,
 
 [s]:
+  subtle,
   statue,
 
 [t]:
@@ -182,6 +183,7 @@ func TestWordsListPrintString(t *testing.T) {
   respect,
 
 [s]:
+  subtle,
   statue,
 
 [t]:
@@ -779,6 +781,32 @@ func TestLibertyJaString(t *testing.T) {
 func TestLibertyPrintJa(t *testing.T) {
 	expect := LibertyJaString()
 	actual := `[名]: [C, U]: [主な意味]: 自由、独立、権利、特権、特典`
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+
+//subtle.go
+func TestSubtleEnString(t *testing.T) {
+	expect := "subtle"
+	actual := SubtleEnString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestSubtleJaString(t *testing.T) {
+	expect := `[形]: [主な意味]: 1. 微かな、微妙な 2. 巧妙な 3. 鋭敏な`
+	actual := SubtleJaString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestSubtlePrintJa(t *testing.T) {
+	expect := SubtleJaString()
+	actual := `[形]: [主な意味]: 1. 微かな、微妙な 2. 巧妙な 3. 鋭敏な`
 
 	if expect != actual {
 		t.Errorf("%s != %s\n", expect, actual)

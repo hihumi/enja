@@ -202,4 +202,12 @@ func TestSwitchEnWord(t *testing.T) {
 		t.Errorf("%v != %v\n", libertyEnExpect, libertyEnActual)
 	}
 
+	// enjas.SubtleEnstring() (subtle.go: SubtleEnString())
+	subtleEnExpect := "subtle"
+	subtleEnActual := enjas.SubtleEnString()
+
+	if subtleEnExpect != subtleEnActual {
+		t.Errorf("%v != %v\n", subtleEnExpect, subtleEnActual)
+	}
+
 }

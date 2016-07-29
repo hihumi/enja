@@ -71,6 +71,7 @@ func SwitchEnWord(enWord string) {
 
 		// s
 		statue = enjas.StatueEnString()
+		subtle = enjas.SubtleEnString()
 
 		// t
 
@@ -170,6 +171,8 @@ func SwitchEnWord(enWord string) {
 		enjas.RespectPrintJa()
 
 	// s
+	case subtle:
+		enjas.SubtlePrintJa()
 	case statue:
 		enjas.StatuePrintJa()
 
