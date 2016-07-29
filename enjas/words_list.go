@@ -73,6 +73,7 @@ func WordsListReturnString() string {
 [q]:
 
 [r]:
+  remind,
   respect,
 
 [s]:

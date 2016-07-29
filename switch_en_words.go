@@ -68,6 +68,7 @@ func SwitchEnWord(enWord string) {
 		// q
 
 		// r
+		remind  = enjas.RemindEnString()
 		respect = enjas.RespectEnString()
 
 		// s
@@ -171,6 +172,8 @@ func SwitchEnWord(enWord string) {
 	// q
 
 	// r
+	case remind:
+		enjas.RemindPrintJa()
 	case respect:
 		enjas.RespectPrintJa()
 

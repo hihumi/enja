@@ -8,7 +8,7 @@ import (
 )
 
 // template
-/* enjas.EnWordEnstring() (enWord.go: EnWordEnString())
+/* // enjas.EnWordEnstring() (enWord.go: EnWordEnString())
 enWordEnExpect := "enWord"
 enWordEnActual := enjas.EnWordEnString()
 
@@ -224,6 +224,14 @@ func TestSwitchEnWord(t *testing.T) {
 
 	if perfumeEnExpect != perfumeEnActual {
 		t.Errorf("%v != %v\n", perfumeEnExpect, perfumeEnActual)
+	}
+
+	// enjas.RemindEnstring() (remind.go: RemindEnString())
+	remindEnExpect := "remind"
+	remindEnActual := enjas.RemindEnString()
+
+	if remindEnExpect != remindEnActual {
+		t.Errorf("%v != %v\n", remindEnExpect, remindEnActual)
 	}
 
 }

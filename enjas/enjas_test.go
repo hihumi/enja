@@ -98,6 +98,7 @@ func TestWordsListReturnString(t *testing.T) {
 [q]:
 
 [r]:
+  remind,
   respect,
 
 [s]:
@@ -183,6 +184,7 @@ func TestWordsListPrintString(t *testing.T) {
 [q]:
 
 [r]:
+  remind,
   respect,
 
 [s]:
@@ -863,6 +865,32 @@ func TestPerfumeJaString(t *testing.T) {
 func TestPerfumePrintJa(t *testing.T) {
 	expect := PerfumeJaString()
 	actual := `[名]: [C, U]: [主な意味]: 1. 香水、香料、芳香剤 2. 香り、芳香`
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+
+//remind.go
+func TestEnWordEnString(t *testing.T) {
+	expect := "remind"
+	actual := RemindEnString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestRemindJaString(t *testing.T) {
+	expect := `[動]: [主な意味]: 1. ...に思い出させる 2. ...に気付かせる`
+	actual := RemindJaString()
+
+	if expect != actual {
+		t.Errorf("%s != %s\n", expect, actual)
+	}
+}
+func TestRemindPrintJa(t *testing.T) {
+	expect := RemindJaString()
+	actual := `[動]: [主な意味]: 1. ...に思い出させる 2. ...に気付かせる`
 
 	if expect != actual {
 		t.Errorf("%s != %s\n", expect, actual)
