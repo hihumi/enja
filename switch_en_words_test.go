@@ -210,4 +210,12 @@ func TestSwitchEnWord(t *testing.T) {
 		t.Errorf("%v != %v\n", subtleEnExpect, subtleEnActual)
 	}
 
+	// enjas.ScentEnstring() (scent.go: ScentEnString())
+	scentEnExpect := "scent"
+	scentEnActual := enjas.ScentEnString()
+
+	if scentEnExpect != scentEnActual {
+		t.Errorf("%v != %v\n", scentEnExpect, scentEnActual)
+	}
+
 }
